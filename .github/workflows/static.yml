@@ -25,6 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
+      PAGE_URL: https://satnilla.github.io/dotnetplanet
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
